@@ -359,7 +359,7 @@ img {
 
 @media screen and (max-width: 576px) {
 	.header__menu.show::after {
-		top: 59px;
+		top: 77px;
 	}
 
 	.header__logo {
@@ -402,6 +402,10 @@ img {
 }
 
 @media screen and (max-width: 350px) {
+	.header__menu.show::after {
+		top: 59px;
+	}
+
 	.header__menu-wrap {
 		min-height: 60px;
 	}
