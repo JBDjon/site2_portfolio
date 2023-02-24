@@ -358,6 +358,10 @@ img {
 }
 
 @media screen and (max-width: 576px) {
+	.header__menu.show::after {
+		top: 59px;
+	}
+
 	.header__logo {
 
 		margin-right: 20px;
@@ -402,9 +406,7 @@ img {
 		min-height: 60px;
 	}
 
-	.header__menu.show::after {
-		top: 59px;
-	}
+
 
 	.header__user-menu_wrap {
 		position: absolute;
