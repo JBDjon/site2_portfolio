@@ -64,8 +64,10 @@ img {
 }
 
 :root {
-	--color-text_bg: #01996D;
+	--color-bg: #01996D;
 	--bg-color-section: #245852;
+	--color-title: #01996D;
+	--color-text: #424242;
 }
 
 .container {
@@ -156,7 +158,7 @@ img {
 	height: 120%;
 	width: 0;
 	border-radius: 4px;
-	background-color: var(--color-text_bg);
+	background-color: var(--color-bg);
 	transition: width 0.3s ease-in-out, left 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
@@ -187,7 +189,7 @@ img {
 	color: #fff;
 	height: 50px;
 	width: 180px;
-	background-color: var(--color-text_bg);
+	background-color: var(--color-bg);
 	box-shadow: none;
 }
 
@@ -210,7 +212,7 @@ img {
 }
 
 .header__sign-btn:hover {
-	color: var(--color-text_bg);
+	color: var(--color-bg);
 }
 
 .header__sign-btn:active {
@@ -237,12 +239,12 @@ img {
 	font-size: 65px;
 	max-width: 440px;
 	margin-bottom: 28px;
-	color: var(--color-text_bg);
+	color: var(--color-title);
 }
 
 .header__banner-text {
 	max-width: 420px;
-	column-rule: #484848;
+	color: var(--color-text);
 	font-family: 'Lato-regular', sans-serif;
 	font-weight: 400;
 	font-size: 20px;
@@ -259,7 +261,7 @@ img {
 	color: #fff;
 	height: 65px;
 	width: 228px;
-	background-color: var(--color-text_bg);
+	background-color: var(--color-bg);
 	cursor: pointer;
 
 }
@@ -313,7 +315,7 @@ img {
 
 	.burger.show:hover {
 		cursor: pointer;
-		background-color: var(--color-text_bg);
+		background-color: var(--color-bg);
 		border-radius: 4px;
 	}
 
@@ -425,6 +427,211 @@ img {
 	.header__logo {
 		margin-right: 0;
 	}
+}
 
+.work {
+	padding-top: 170px;
+	margin-bottom: 51px;
+}
+
+.work-subtitle {
+	font-family: 'Lato-semibold', sans-serif;
+	color: var(--color-text);
+	font-weight: 600;
+	font-size: 24px;
+	margin-bottom: 5px;
+}
+
+.work__text {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 52px;
+}
+
+.work__text-title {
+	font-family: 'Georgia-bold', serif;
+	font-size: 50px;
+	font-weight: 700;
+	line-height: 157%;
+	color: var(--color-title);
+	width: 584px;
+
+}
+
+.work__text-content {
+	font-family: 'Lato-medium', sans-serif;
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 150%;
+	color: var(--color-text);
+	padding-left: 20px;
+	width: 671px;
+}
+
+.work__cards {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(1, 1fr);
+	gap: 95px;
+}
+
+.work__card {
+	max-width: 390px;
+}
+
+.work__card--pg02 {
+	padding-top: 287px;
+}
+
+.work__card--pg03 {
+	padding-top: 54px;
+}
+
+.work__card-titles-inner {
+	position: relative;
+}
+
+.work__card-title_h3 {
+
+	font-family: 'Georgia-regular', serif;
+	font-weight: 400;
+	font-size: 150px;
+	line-height: 150%;
+	color: var(--color-title);
+	opacity: 0.2;
+	margin-bottom: 10px;
+}
+
+
+.work__card-title_h5 {
+	font-family: 'Georgia-bold', serif;
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 150%;
+	content: "";
+	position: absolute;
+
+}
+
+.work__card-title_h5--position01 {
+	top: 135px;
+	left: 88px;
+}
+
+.work__card-title_h5--position02 {
+	top: 135px;
+	left: 77px;
+}
+
+.work__card-title_h5--position03 {
+	top: 135px;
+	left: 124px;
+}
+
+.work__card-content {
+	font-family: 'Lato-medium', sans-serif;
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 150%;
+
+}
+
+.work__card-content--mgb01 {
+	margin-bottom: 60px;
+}
+
+.work__card-content--mgb02 {
+	margin-bottom: 37px;
+}
+
+.work__card-content--mgb03 {
+	margin-bottom: 38px;
+}
+
+
+.work__card-img {
+	width: 100%;
+	height: auto;
+	display: block;
+
+}
+
+@media screen and (max-width: 1080px) {
+
+	.work__cards {
+		gap: 40px;
+	}
+}
+
+@media screen and (max-width: 960px) {
+	.work {
+		padding-top: 60px;
+	}
+
+	.work__text-title {
+		font-size: 32px;
+	}
+
+	.work__text {
+		margin-bottom: 0;
+	}
+
+	.work__text-content {
+		font-size: 16px;
+	}
+
+	.work__cards {
+		grid-template-columns: repeat(1, 1fr);
+		grid-template-rows: repeat(3, 1fr);
+		justify-items: center;
+	}
+
+	.work__card--pg02,
+	.work__card--pg03 {
+		padding-top: 0;
+	}
+
+
+}
+
+@media screen and (max-width: 768px) {
+	.work__text {
+		flex-wrap: wrap;
+	}
+
+	.work__text-title {
+		text-align: center;
+		margin-bottom: 15px;
+		width: 100%;
+	}
+
+	.work__text {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 350px) {
+	.work__cards {
+		gap: 0;
+	}
+
+	.work__card-title_h3 {
+		font-size: 100px;
+		line-height: 150%;
+	}
+
+
+	.work__card-title_h5 {
+		font-size: 20px;
+		line-height: 150%;
+	}
+
+	.work__card-title_h5--position01,
+	.work__card-title_h5--position02,
+	.work__card-title_h5--position03 {
+		top: 86px;
+		left: 55px;
+	}
 
 }
